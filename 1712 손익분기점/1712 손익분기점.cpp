@@ -1,20 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-	int a,b,c,tmp;
+	int a,b,c;
+	int tmp, i = 0 ,tmp2 = 0;
 	
 	scanf("%d %d %d",&a,&b,&c);
+	tmp2 = c - b;
 	
-	tmp = (a / (c - b)) + 1;
-	
-	if(tmp > 0)
-	{
-		printf("%d",tmp);
-	}
-	else
+	if( c < b || tmp2 == 0)
 	{
 		printf("-1");
 	}
-	
+	else
+	{
+		tmp =  (a / tmp2) + 1;
+		printf("%d",tmp);
+	}
 }
