@@ -33,3 +33,5 @@ int main()
 		printf("%d ",a[i]);
 	}
 }
+
+// 버블정렬 
